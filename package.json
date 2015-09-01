@@ -1,0 +1,56 @@
+{
+  "name": "hasha-cli",
+  "version": "0.0.0",
+  "description": "Hashing made simple. Get the hash of text or stdin.",
+  "license": "MIT",
+  "repository": "sindresorhus/hasha-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "hasha": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "hash",
+    "hashing",
+    "crypto",
+    "hex",
+    "base64",
+    "md5",
+    "sha1",
+    "sha256",
+    "sha512",
+    "sum",
+    "stream",
+    "file",
+    "fs",
+    "buffer",
+    "string",
+    "text",
+    "rev",
+    "revving",
+    "simple",
+    "easy"
+  ],
+  "dependencies": {
+    "hasha": "^2.0.0",
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
