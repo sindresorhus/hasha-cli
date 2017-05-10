@@ -13,7 +13,7 @@
     "hasha": "cli.js"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "xo && ava"
@@ -46,11 +46,12 @@
     "easy"
   ],
   "dependencies": {
-    "hasha": "^2.0.0",
+    "hasha": "^3.0.0",
     "meow": "^3.3.0"
   },
   "devDependencies": {
     "ava": "*",
+    "execa": "^0.6.3",
     "xo": "*"
   }
 }

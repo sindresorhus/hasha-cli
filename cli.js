@@ -1,33 +1,31 @@
 #!/usr/bin/env node
 'use strict';
-var meow = require('meow');
-var hasha = require('hasha');
+const meow = require('meow');
+const hasha = require('hasha');
 
-var cli = meow({
-	help: [
-		'Usage',
-		'  $ hasha <text>',
-		'  $ cat <file> | hasha',
-		'',
-		'Options',
-		'  -a, --algorithm  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]',
-		'  -e, --encoding   Output encoding: hex,base64,buffer,binary  [Default: hex]',
-		'',
-		'Examples',
-		'  $ hasha unicorn --algorithm=md5',
-		'  1abcb33beeb811dca15f0ac3e47b88d9'
-	]
-}, {
+const cli = meow(`
+	Usage
+	  $ hasha <text>
+	  $ cat <file> | hasha
+
+	Options
+	  -a, --algorithm  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]
+	  -e, --encoding   Output encoding: hex,base64,buffer,binary  [Default: hex]
+
+	Example
+	  $ hasha unicorn --algorithm=md5
+	  1abcb33beeb811dca15f0ac3e47b88d9
+`, {
 	alias: {
 		a: 'algorithm',
 		e: 'encoding'
 	}
 });
 
-var input = cli.input[0];
+const input = cli.input[0];
 
 if (!input && process.stdin.isTTY) {
-	console.log('Please specify something to hash');
+	console.log('Specify something to hash');
 	process.exit(1);
 }
 

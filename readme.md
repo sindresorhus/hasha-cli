@@ -23,7 +23,7 @@ $ hasha --help
     -a, --algorithm  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]
     -e, --encoding   Output encoding: hex,base64,buffer,binary  [Default: hex]
 
-  Examples
+  Example
     $ hasha unicorn --algorithm=md5
     1abcb33beeb811dca15f0ac3e47b88d9
 ```
@@ -36,4 +36,4 @@ $ hasha --help
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
