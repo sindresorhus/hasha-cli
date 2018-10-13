@@ -9,16 +9,22 @@ const cli = meow(`
 	  $ cat <file> | hasha
 
 	Options
-	  -a, --algorithm  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]
-	  -e, --encoding   Output encoding: hex,base64,buffer,binary  [Default: hex]
+	  --algorithm, -a  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]
+	  --encoding, -e   Output encoding: hex,base64,buffer,binary  [Default: hex]
 
 	Example
 	  $ hasha unicorn --algorithm=md5
 	  1abcb33beeb811dca15f0ac3e47b88d9
 `, {
-	alias: {
-		a: 'algorithm',
-		e: 'encoding'
+	flags: {
+		algorithm: {
+			type: 'string',
+			alias: 'a'
+		},
+		encoding: {
+			type: 'string',
+			alias: 'e'
+		}
 	}
 });
 

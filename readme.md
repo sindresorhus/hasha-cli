@@ -20,8 +20,8 @@ $ hasha --help
     $ cat <file> | hasha
 
   Options
-    -a, --algorithm  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]
-    -e, --encoding   Output encoding: hex,base64,buffer,binary  [Default: hex]
+    --algorithm, -a  Cipher algorithm: md5,sha1,sha256,sha512   [Default: sha512]
+    --encoding, -e   Output encoding: hex,base64,buffer,binary  [Default: hex]
 
   Example
     $ hasha unicorn --algorithm=md5
