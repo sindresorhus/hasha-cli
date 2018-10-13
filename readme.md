@@ -1,4 +1,4 @@
-# [<img src="https://rawgit.com/sindresorhus/hasha/master/media/logo.svg" width="145" align="left" alt="hasha-cli">](https://github.com/sindresorhus/hasha)CLI [![Build Status](https://travis-ci.org/sindresorhus/hasha-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/hasha-cli)
+# [<img src="https://cdn.jsdelivr.net/gh/sindresorhus/hasha@d29b8b605ba4b4b25a417d259530efe5adc07100/media/logo.svg" width="145" align="left" alt="hasha-cli">](https://github.com/sindresorhus/hasha)CLI [![Build Status](https://travis-ci.org/sindresorhus/hasha-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/hasha-cli)
 
 > Hashing made simple. Get the hash of text or stdin.
 
