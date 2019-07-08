@@ -46,12 +46,12 @@
 		"easy"
 	],
 	"dependencies": {
-		"hasha": "^3.0.0",
+		"hasha": "^5.0.0",
 		"meow": "^5.0.0"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
-		"execa": "^1.0.0",
-		"xo": "^0.23.0"
+		"ava": "^2.1.0",
+		"execa": "^2.0.3",
+		"xo": "^0.24.0"
 	}
 }

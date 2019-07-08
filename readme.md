@@ -32,8 +32,3 @@ $ hasha --help
 ## Related
 
 - [hasha](https://github.com/sindresorhus/hasha) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
