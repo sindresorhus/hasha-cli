@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const hasha = require('hasha');
+import process from 'node:process';
+import meow from 'meow';
+import hasha from 'hasha';
 
 const cli = meow(`
 	Usage
@@ -16,16 +16,17 @@ const cli = meow(`
 	  $ hasha unicorn --algorithm=md5
 	  1abcb33beeb811dca15f0ac3e47b88d9
 `, {
+	importMeta: import.meta,
 	flags: {
 		algorithm: {
 			type: 'string',
-			alias: 'a'
+			shortFlag: 'a',
 		},
 		encoding: {
 			type: 'string',
-			alias: 'e'
-		}
-	}
+			shortFlag: 'e',
+		},
+	},
 });
 
 const input = cli.input[0];

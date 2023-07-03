@@ -2,13 +2,11 @@
 
 > Hashing made simple. Get the hash of text or stdin.
 
-
 ## Install
 
+```sh
+npm install --global hasha-cli
 ```
-$ npm install --global hasha-cli
-```
-
 
 ## Usage
 

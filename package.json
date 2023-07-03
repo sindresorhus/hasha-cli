@@ -7,13 +7,14 @@
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
 	"bin": {
-		"hasha": "cli.js"
+		"hasha": "./cli.js"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=16"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -46,12 +47,12 @@
 		"easy"
 	],
 	"dependencies": {
-		"hasha": "^5.0.0",
-		"meow": "^5.0.0"
+		"hasha": "^5.2.2",
+		"meow": "^12.0.1"
 	},
 	"devDependencies": {
-		"ava": "^2.1.0",
-		"execa": "^2.0.3",
-		"xo": "^0.24.0"
+		"ava": "^5.3.1",
+		"execa": "^7.1.1",
+		"xo": "^0.54.2"
 	}
 }
