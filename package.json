@@ -1,6 +1,6 @@
 {
 	"name": "hasha-cli",
-	"version": "5.0.0",
+	"version": "6.0.0",
 	"description": "Hashing made simple. Get the hash of text or stdin.",
 	"license": "MIT",
 	"repository": "sindresorhus/hasha-cli",
