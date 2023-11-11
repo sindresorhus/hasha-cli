@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import process from 'node:process';
 import meow from 'meow';
-import hasha from 'hasha';
+import {hashSync, hashingStream} from 'hasha';
 
 const cli = meow(`
 	Usage
@@ -37,7 +37,7 @@ if (!input && process.stdin.isTTY) {
 }
 
 if (input) {
-	console.log(hasha(input, cli.flags));
+	console.log(hashSync(input, cli.flags));
 } else {
-	process.stdin.pipe(hasha.stream(cli.flags)).pipe(process.stdout);
+	process.stdin.pipe(hashingStream(cli.flags)).pipe(process.stdout);
 }

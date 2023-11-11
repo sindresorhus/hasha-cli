@@ -26,7 +26,6 @@ $ hasha --help
     1abcb33beeb811dca15f0ac3e47b88d9
 ```
 
-
 ## Related
 
 - [hasha](https://github.com/sindresorhus/hasha) - API for this module
