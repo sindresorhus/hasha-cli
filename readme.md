@@ -28,4 +28,4 @@ $ hasha --help
 
 ## Related
 
-- [hasha](https://github.com/sindresorhus/hasha) - API for this module
+- [hasha](https://github.com/sindresorhus/hasha) - API for this package
